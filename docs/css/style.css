@@ -1,0 +1,13 @@
+.filter{
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 5px 0px;
+}
+
+.item{
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 5px 0px;
+}
