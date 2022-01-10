@@ -7,71 +7,83 @@
     </header>
     <body>
         <div class="filter">
-            ORフィルター<br>
-            <input type="checkbox" id="HPcheckbox" name="filterOr" value="HP" checked>
-            <label for="HPcheckbox">高品質/High Performance</label>
-            <input type="checkbox" id="MPcheckbox" name="filterOr" value="MP" checked>
-            <label for="MPcheckbox">中品質/Medium Performance</label>
-            <input type="checkbox" id="LPcheckbox" name="filterOr" value="LP" checked>
-            <label for="LPcheckbox">低品質/Low Performance</label>
+            <div class="filterHead">モデルランク イントネーション再現度と音質再現度（ORフィルター）</div>
+            <input type="checkbox" id="RankPcheckbox" name="filterOr" value="RankP" checked>
+            <label for="RankPcheckbox">プラチナ：疑問符対応、10時間以上もしくは2万文以上の音声、音質重視専用ボコーダー対応</label><br>
+            <input type="checkbox" id="RankGcheckbox" name="filterOr" value="RankG" checked>
+            <label for="RankGcheckbox">ゴールド：疑問符対応、1時間以上もしくは2千文以上の音声、音質重視専用ボコーダー対応</label><br>
+            <input type="checkbox" id="RankScheckbox" name="filterOr" value="RankS" checked>
+            <label for="RankScheckbox">シルバー：音質重視専用ボコーダー対応</label><br>
         </div>
         <div class="filter">
-            ANDフィルター<br>
-            <input type="checkbox" id="HiFiCheckbox" name="filterAnd" value="HiFi" checked>
-            <label for="HiFiCheckbox">新規ボコーダー対応/Has HiFi-GAN Model</label>
+            <div class="filterHead">そのほかの項目（上のフィルターの結果をさらに限定）</div>
+            <input type="checkbox" id="SLVcheckbox" name="filterAdd" value="SLV">
+            <label for="SLVcheckbox">速度重視専用ボコーダー対応</label><br>
+            <input type="checkbox" id="EXTcheckbox" name="filterAdd" value="EXT">
+            <label for="EXTcheckbox">感嘆符やスイッチフラグなど拡張表現対応</label><br>
+            <input type="checkbox" id="Wcheckbox" name="filterAdd" value="W">
+            <label for="Wcheckbox">笑い音素対応</label><br>
         </div>
-        <div class="item HP HiFi">
+        <div class="item RankP W">
             <div><span class="nameLavel">Name：</span><span class="name">Haruqa</span></div>
             <div><span class="linkName">Link：</span><span class="link"><a href="https://haruqa.github.io/" target="_blank">利用規約を確認できるHaruqaの配布サイト</a></span></div>
             <div><span class="descriptionLavel">Description：</span><span class="description">TALQu本体に同梱のデフォルトモデルです</span></div>
+            <div><span class="linkName">仮配布笑い音素対応バージョンLink：</span><span class="link"><a href="https://haruqa.fanbox.cc/posts/2731683" target="_blank">TALQuモデル 大草原Haruqaクローズド配布</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/Haruqa-1.wav"></audio>
             </div>
         </div>
-        <div class="item MP HiFi">
+        <div class="item RankP">
+            <div><span class="nameLavel">Name：</span><span class="name">重音テト</span></div>
+            <div><span class="linkName">Link：</span><span class="link"><a href="https://kasaneteto.jp/" target="_blank">重音テト・オフィシャルサイト</a></span></div>
+            <div>
+                <audio class="sample" controls src="audio/重音テト-1.wav"></audio>
+            </div>
+        </div>
+        <div class="item RankS">
             <div><span class="nameLavel">Name：</span><span class="name">朱鷺田和武-おはなし-</span></div>
             <div><span class="linkName">Link：</span><span class="link"><a href="https://aquablue0708509.wixsite.com/iroiroiro" target="_blank">配布サイト</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/朱鷺田和武-おはなし--1.wav"></audio>
             </div>
         </div>
-        <div class="item MP HiFi">
+        <div class="item RankG">
             <div><span class="nameLavel">Name：</span><span class="name">みじゅき/Mijuqi</span></div>
             <div><span class="linkName">Link：</span><span class="link"><a href="https://mizkineko22.wixsite.com/mijuqi-official" target="_blank">みじゅきの配布サイト</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/みじゅき-1.wav"></audio>
             </div>
         </div>
-        <div class="item MP HiFi">
+        <div class="item RankG">
             <div><span class="nameLavel">Name：</span><span class="name">手平空人</span></div>
             <div><span class="linkName">Link：</span><span class="link"><a href="https://twitter.com/tenohira_akito" target="_blank">管理者のtwitter</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/手平空人-1.wav"></audio>
             </div>
         </div>
-        <div class="item MP noHiFi">
-            <div><span class="nameLavel">Name：</span><span class="name">玄野武宏_Lite</span></div>
-            <div><span class="linkName">Link1：</span><span class="link"><a href="https://note.com/notes/n9c9b2d8bc6b4" target="_blank">最新規約/Latest terms of use</a></span></div>
+        <div class="item RankG">
+            <div><span class="nameLavel">Name：</span><span class="name">玄野武宏</span></div>
+            <div><span class="linkName">Link1：</span><span class="link"><a href="https://virvoxproject.wixsite.com/official" target="_blank">VirVox Project</a></span></div>
             <div><span class="linkName">Link2：</span><span class="link"><a href="https://booth.pm/ja/items/3076890" target="_blank">【AI系読み上げソフト】TALQu向け男声音源 - 玄野武宏</a></span></div>
             <div>
-                <audio class="sample" controls src="audio/玄野武宏_Lite-1.wav"></audio>
+                <audio class="sample" controls src="audio/玄野武宏-1.wav"></audio>
             </div>
         </div>
-        <div class="item MP HiFi">
+        <div class="item RankG">
             <div><span class="nameLavel">Name：</span><span class="name">黒昴宿-AI Talk- ver1.00</span></div>
-            <div><span class="linkName">Link：</span><span class="link"><a href="https://atsuya19960924.wixsite.com/akasubaru/%E8%A4%87%E8%A3%BD-ai-%E6%AD%8C%E5%A3%B0db-%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84-read-me" target="_blank">利用規約を確認できる黒昴宿の配布サイト</a></span></div>
+            <div><span class="linkName">Link：</span><span class="link"><a href="https://atsuya19960924.wixsite.com/akasubaru" target="_blank">昂楽器屋</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/黒昴宿-AI_Talk-_ver1.00-1.wav"></audio>
             </div>
         </div>
-        <div class="item MP HiFi">
+        <div class="item RankG">
             <div><span class="nameLavel">Name：</span><span class="name">黒武光河 (黒っぽいど)-AI Talk-</span></div>
-            <div><span class="linkName">Link：</span><span class="link"><a href="https://atsuya19960924.wixsite.com/akasubaru/%E8%A4%87%E8%A3%BD-ai-%E6%AD%8C%E5%A3%B0db-%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84-read-me" target="_blank">利用規約を確認できる黒武光河(黒っぽいど)の配布サイト</a></span></div>
+            <div><span class="linkName">Link：</span><span class="link"><a href="https://atsuya19960924.wixsite.com/akasubaru" target="_blank">昂楽器屋</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/黒武光河 (黒っぽいど)-AI_Talk--1.wav"></audio>
             </div>
         </div>
-        <div class="item LP HiFi">
+        <div class="item RankS">
             <div><span class="nameLavel">Name：</span><span class="name">くれぽっぽ_HaruqaBase</span></div>
             <div><span class="linkName">Link1：</span><span class="link"><a href="https://twitter.com/crazy_toho" target="_blank">管理人のTwitter</a></span></div>
             <div><span class="linkName">Link2：</span><span class="link"><a href="https://crepo.jimdosite.com/" target="_blank">くれぽの部屋</a></span></div>

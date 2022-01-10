@@ -1,13 +1,68 @@
+/* common */
+body{
+    background-color: #22272f;
+    color: #EEEEEE;
+}
+
+a{
+    color: #00B582;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+  }
+  
+  a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #00B582;
+    transition: .3s;
+    transform: translateX(-50%);
+  }
+  
+  a:hover::after{
+    width: 100%;
+  }
+
+/* parts */
+
 .filter{
-    border: 2px solid gray;
+    border: 3px solid #393E46;
     border-radius: 30px;
     padding: 15px;
     margin: 5px 0px;
 }
 
+.filterHead{
+    font-size:20px;
+    padding-bottom:5px;
+}
+
 .item{
-    border: 1px solid gray;
+    border: 2px solid #393E46;
     border-radius: 30px;
     padding: 15px;
     margin: 5px 0px;
+}
+
+.RankP{
+    background: -moz-linear-gradient(#222f2d, #445b64);
+    background: -webkit-linear-gradient(#22272f, #445b64);
+    background: linear-gradient(to right, #22272f, #445b64);
+}
+
+.RankG{
+    background: -moz-linear-gradient(#222f2d, #4e4d32);
+    background: -webkit-linear-gradient(#22272f, #4e4d32);
+    background: linear-gradient(to right, #22272f, #4e4d32);
+}
+
+.RankS{
+    background: -moz-linear-gradient(#222f2d, #3f3f3f);
+    background: -webkit-linear-gradient(#22272f, #3f3f3f);
+    background: linear-gradient(to right, #22272f, #3f3f3f);
 }
