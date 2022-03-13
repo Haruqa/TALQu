@@ -15,8 +15,32 @@
             <input type="checkbox" id="RankScheckbox" name="filterOr" value="RankS" checked>
             <label for="RankScheckbox">シルバー：音質重視専用ボコーダー対応</label><br>
         </div>
-        <div class="filter">
-            <div class="filterHead">そのほかの項目（上のフィルターの結果をさらに限定）</div>
+        <div class="filter" style="width: calc(50% - 40px);float: left;">
+            <div class="filterHead">声別（年齢イメージフィルターと同時使用可能）</div>
+            <input type="checkbox" id="JOSEcheckbox" name="filterKoebetu" value="JOSE">
+            <label for="JOSEcheckbox">女声</label><br>
+            <input type="checkbox" id="TYUSEcheckbox" name="filterKoebetu" value="TYUSE">
+            <label for="TYUSEcheckbox">中声</label><br>
+            <input type="checkbox" id="DANSEcheckbox" name="filterKoebetu" value="DANSE">
+            <label for="DANSEcheckbox">男声</label><br>
+            <input type="checkbox" id="KFUMEIcheckbox" name="filterKoebetu" value="KFUMEI">
+            <label for="KFUMEIcheckbox">不明</label><br>
+        </div>
+        <div class="filter" style="width: calc(50% - 40px);float: right;">
+            <div class="filterHead">年齢イメージ（声別フィルターと同時使用可能）</div>
+            <input type="checkbox" id="OSANAIcheckbox" name="filterNenre" value="OSANAI">
+            <label for="OSANAIcheckbox">幼い</label><br>
+            <input type="checkbox" id="WAKAIcheckbox" name="filterNenre" value="WAKAI">
+            <label for="WAKAIcheckbox">若い</label><br>
+            <input type="checkbox" id="OTONAcheckbox" name="filterNenre" value="OTONA">
+            <label for="OTONAcheckbox">大人びた</label><br>
+            <input type="checkbox" id="OITAcheckbox" name="filterNenre" value="OITA">
+            <label for="OITAcheckbox">老いた</label><br>
+            <input type="checkbox" id="NFUMEIcheckbox" name="filterNenre" value="NFUMEI">
+            <label for="NFUMEIcheckbox">不明</label><br>
+        </div>
+        <div class="filter" style="clear: both;">
+            <div class="filterHead">そのほかの項目（声別、年齢イメージフィルターを外すと使用可能）</div>
             <input type="checkbox" id="SLVcheckbox" name="filterAdd" value="SLV">
             <label for="SLVcheckbox">速度重視専用ボコーダー対応</label><br>
             <input type="checkbox" id="EXTcheckbox" name="filterAdd" value="EXT">
@@ -24,69 +48,179 @@
             <input type="checkbox" id="Wcheckbox" name="filterAdd" value="W">
             <label for="Wcheckbox">笑い音素対応</label><br>
         </div>
-        <div class="item RankP W">
-            <div><span class="nameLavel">Name：</span><span class="name">Haruqa</span></div>
-            <div><span class="linkName">Link：</span><span class="link"><a href="https://haruqa.github.io/" target="_blank">利用規約を確認できるHaruqaの配布サイト</a></span></div>
-            <div><span class="descriptionLavel">Description：</span><span class="description">TALQu本体に同梱のデフォルトモデルです</span></div>
-            <div><span class="linkName">仮配布笑い音素対応バージョンLink：</span><span class="link"><a href="https://haruqa.fanbox.cc/posts/2731683" target="_blank">TALQuモデル 大草原Haruqaクローズド配布</a></span></div>
+        <div class="item RankP TYUSE WAKAI W">
+            <div class="icon"><img src="icon/Haruqa.png" width=100px height=100px></div>
+            <div><span class="label">モデル名：</span>Haruqa</div>
+            <div><span class="label">著者名：</span>Haruqa</div>
+            <div><span class="label">リンク：</span><a href="https://haruqa.github.io/" target="_blank">Haruqaの配布サイト 利用規約が確認できます</a></div>
+            <div><span class="label">声別：</span>中声</div>
+            <div><span class="label">年齢イメージ：</span>若い</div>
+            <div><span class="label">イメージカラー：</span><span style="background-color:#216927; padding:0px 5px">#216927</span></div>
+            <div><span class="label">説明：</span>TALQu本体に同梱のデフォルトモデルです。通常は冷静に喋りますが、笑い音素を使用するとニヤニヤと喋ります</div>
+            <div><span class="label">商用利用：</span>スーパーチャットや広告収入、クリエイター奨励プログラムなど個人的同人的利用ならよい</div>
+            <div><span class="label">クレジット表記：</span>場合により必須（詳細は利用規約を確認してください）</div>
+            <div><span class="label">クレジット表記例：</span>[声あて先キャラ名] CV:Haruqa(AI)</div>
+            <div><span class="label">その他：</span>立ち絵素材あり, 3Dモデル素材あり, セリフ素材あり, キャラ設定無視OK, 他のキャラへ声あてOK</div>
+            <div><span class="label">その他項目について説明：</span>動かせる立ち絵は有志素材で、Haruqaの配布サイトで紹介しています。セリフ素材は<a href="https://www.fanbox.cc/manage/posts/2837462" target="_blank">FANBOX</a>に仮置きしています</div>
             <div>
                 <audio class="sample" controls src="audio/Haruqa-1.wav"></audio>
             </div>
         </div>
-        <div class="item RankP">
-            <div><span class="nameLavel">Name：</span><span class="name">重音テト</span></div>
-            <div><span class="linkName">Link：</span><span class="link"><a href="https://kasaneteto.jp/" target="_blank">重音テト・オフィシャルサイト</a></span></div>
+        <div class="item RankP DANSE WAKAI EXT">
+            <div class="icon"><div style="display:block; background-color: #FFFFFF;width:100px; height:100px"></div></div>
+            <div><span class="label">モデル名：</span>おふとんP</div>
+            <div><span class="label">著者名：</span>おふとんP</div>
+            <div><span class="label">リンク：</span><a href="https://mohumohuton.booth.pm/items/3648203" target="_blank">https://mohumohuton.booth.pm/items/3648203</a></div>
+            <div><span class="label">声別：</span>男声</div>
+            <div><span class="label">年齢イメージ：</span>若い</div>
+            <div><span class="label">イメージカラー：</span><span style="background-color:#0033FF; padding:0px 5px">#0033FF</span></div>
+            <div><span class="label">説明：</span>素材の味を活かしました。</div>
+            <div><span class="label">商用利用：</span>場合により可能（詳細は利用規約を確認してください）</div>
+            <div><span class="label">クレジット表記：</span>必須</div>
+            <div><span class="label">クレジット表記例：</span>TALQu:おふとんP</div>
+            <div><span class="label">その他：</span>キャラ設定無視OK, 他のキャラへ声あてOK</div>
+            <div><span class="label">その他項目について説明：</span>UTAU音源キャラクター「薪宮風季」と同一視可能、薪宮風季の立ち絵も流用可能</div>
+            <div>
+                <audio class="sample" controls src="audio/おふとんP-1.wav"></audio>
+            </div>
+        </div>
+        <div class="item RankP JOSE OSANAI">
+            <div class="icon"><img src="icon/重音テト.png" width=100px height=100px></div>
+            <div><span class="label">モデル名：</span>重音テト</div>
+            <div><span class="label">著者名：</span>ツインドリル</div>
+            <div><span class="label">リンク：</span><a href="https://kasaneteto.jp/" target="_blank">重音テト・オフィシャルサイト</a></div>
+            <div><span class="label">声別：</span>女声</div>
+            <div><span class="label">年齢イメージ：</span>幼い</div>
+            <div><span class="label">イメージカラー：</span><span style="background-color:#E47780; padding:0px 5px">#E47780</span></div>
+            <div><span class="label">説明：</span>ツンデレキュートなネコボイスです！</div>
+            <div><span class="label">商用利用：</span>スーパーチャットや広告収入、クリエイター奨励プログラムなど個人的同人的利用ならよい<br><span style="background-color: #000000;">商業等への音源利用においては公式サイトから連絡して欲しい</span>とのこと</div>
+            <div><span class="label">クレジット表記：</span>場合により必須（詳細は利用規約を確認してください）</div>
+            <div><span class="label">クレジット表記について：</span><a href="https://kasaneteto.jp/guideline.html" target="_blank">重音テト・オフィシャルサイトのガイドライン</a>を確認してください</div>
+            <div><span class="label">その他：</span>立ち絵素材あり, キャラ設定無視OK, 他のキャラへ声あてOK</div>
+            <div><span class="label">その他項目について説明：</span>配布ページURL→<a href="https://kasaneteto.jp/ongen_down4.html" target="_blank">https://kasaneteto.jp/ongen_down4.html</a></div>
             <div>
                 <audio class="sample" controls src="audio/重音テト-1.wav"></audio>
+                <audio class="sample" controls src="audio/重音テト-2.wav"></audio>
+            </div>
+        </div>
+        <div class="item RankG JOSE WAKAI">
+            <div class="icon"><img src="icon/小春音アミ.png" width=100px height=100px></div>
+            <div><span class="label">モデル名：</span>小春音アミ(CV:あみたろ)</div>
+            <div><span class="label">著者名：</span>あみたろの声素材工房</div>
+            <div><span class="label">リンク：</span><a href="http://amitaro.net/" target="_blank">あみたろの声素材工房</a></div>
+            <div><span class="label">声別：</span>女声</div>
+            <div><span class="label">年齢イメージ：</span>若い</div>
+            <div><span class="label">イメージカラー：</span><span style="color:#000000;background-color:#FFCCDF; padding:0px 5px">#FFCCDF</span></div>
+            <div><span class="label">説明：</span>明るく聴き取りやすい女の子の声で喋ります</div>
+            <div><span class="label">商用利用：</span>可能</div>
+            <div><span class="label">クレジット表記：</span>必須</div>
+            <div><span class="label">クレジット表記例：</span>小春音アミ(CV:あみたろ)</div>
+            <div><span class="label">その他：</span>立ち絵素材あり, セリフ素材あり, キャラ設定無視OK, 他のキャラへ声あてOK</div>
+            <div><span class="label">その他項目について説明：</span>セリフ素材2700点以上あります！</div>
+            <div>
+                <audio class="sample" controls src="audio/小春音アミ-1.wav"></audio>
+            </div>
+        </div>
+        <div class="item RankG DANSE OTONA OITA">
+            <div class="icon"><img src="icon/虚音イフ.png" width=100px height=100px></div>
+            <div><span class="label">モデル名：</span>虚音イフ</div>
+            <div><span class="label">著者名：</span>中の人：いくまさき　管理：馳烏(はせを)</div>
+            <div><span class="label">リンク１：</span><a href="https://hasewoalice.wixsite.com/uroneif" target="_blank">虚音イフ 公式サイト</a></div>
+            <div><span class="label">リンク２：</span><a href="https://twitter.com/AliceHasewo" target="_blank">管理者Twitter</a></div>
+            <div><span class="label">声別：</span>男声</div>
+            <div><span class="label">年齢イメージ：</span>大人びた, 老いた</div>
+            <div><span class="label">イメージカラー：</span><span style="background-color:#432F2F; padding:0px 5px">#432F2F</span></div>
+            <div><span class="label">説明：</span>渋く落ち着いた『おじ様ボイス』の人外紳士です。</div>
+            <div><span class="label">商用利用：</span>スーパーチャットや広告収入、クリエイター奨励プログラムなど個人的同人的利用ならよい</div>
+            <div><span class="label">クレジット表記：</span>必須</div>
+            <div><span class="label">クレジット表記例：</span>虚音イフ</div>
+            <div><span class="label">その他：</span>立ち絵素材あり, 3Dモデル素材あり, セリフ素材あり, キャラ設定無視OK, 他のキャラへ声あてOK</div>
+            <div><span class="label">その他項目について説明：</span>各種素材配布中。設定容姿口調の改変OK。ちょい役/敵役/親戚役など動画のアクセントにも！他キャラへの声あても歓迎です！</div>
+            <div>
+                <audio class="sample" controls src="audio/虚音イフ-1.wav"></audio>
+                <audio class="sample" controls src="audio/虚音イフ-2.wav"></audio>
+                <audio class="sample" controls src="audio/虚音イフ-3.wav"></audio>
             </div>
         </div>
         <div class="item RankS">
-            <div><span class="nameLavel">Name：</span><span class="name">朱鷺田和武-おはなし-</span></div>
-            <div><span class="linkName">Link：</span><span class="link"><a href="https://aquablue0708509.wixsite.com/iroiroiro" target="_blank">配布サイト</a></span></div>
+            <div><span class="label">モデル名：</span><span class="name">朱鷺田和武-おはなし-</span></div>
+            <div><span class="label">リンク：</span><span class="link"><a href="https://aquablue0708509.wixsite.com/iroiroiro" target="_blank">配布サイト</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/朱鷺田和武-おはなし--1.wav"></audio>
             </div>
         </div>
-        <div class="item RankG">
-            <div><span class="nameLavel">Name：</span><span class="name">みじゅき/Mijuqi</span></div>
-            <div><span class="linkName">Link：</span><span class="link"><a href="https://mizkineko22.wixsite.com/mijuqi-official" target="_blank">みじゅきの配布サイト</a></span></div>
+        <div class="item RankG JOSE OSANAI WAKAI">
+            <div class="icon"><img src="icon/Mijuqi.png" width=100px height=100px></div>
+            <div><span class="label">モデル名：</span>みじゅき</div>
+            <div><span class="label">著者名：</span>中の人：MIZKI　推薦：CrazY</div>
+            <div><span class="label">リンク１：</span><a href="https://mizkineko22.wixsite.com/mijuqi-official" target="_blank">みじゅきの配布サイト</a></div>
+            <div><span class="label">リンク２：</span><a href="https://twitter.com/MIZKI_AtR" target="_blank">管理人のTwitter</a></div>
+            <div><span class="label">声別：</span>女声</div>
+            <div><span class="label">年齢イメージ：</span>幼い, 若い</div>
+            <div><span class="label">イメージカラー：</span><span style="background-color:#E77087; padding:0px 5px">#E77087</span><span style="color:#000000;background-color:#F9A8AF; padding:0px 5px;margin-left:5px">#F9A8AF</span>　使いやすそうな方を使ってください とのこと</div>
+            <div><span class="label">説明：</span>少し大人びた少女声で優しく喋ります</div>
+            <div><span class="label">商用利用：</span>スーパーチャットや広告収入、クリエイター奨励プログラムなど個人的同人的利用ならよい</div>
+            <div><span class="label">クレジット表記：</span>必須</div>
+            <div><span class="label">クレジット表記例：</span>「みじゅき」「Mijuqi」</div>
+            <div><span class="label">その他：</span>立ち絵素材あり, キャラ設定無視OK, 他のキャラへ声あてOK</div>
+            <div><span class="label">その他項目について説明：</span>PSD形式、png形式に対応しています。<br>
+                <a href="https://mizkineko22.wixsite.com/mijuqi-official/picture" target="_blank">https://mizkineko22.wixsite.com/mijuqi-official/picture</a></div>
             <div>
                 <audio class="sample" controls src="audio/みじゅき-1.wav"></audio>
             </div>
         </div>
-        <div class="item RankG">
-            <div><span class="nameLavel">Name：</span><span class="name">手平空人</span></div>
-            <div><span class="linkName">Link：</span><span class="link"><a href="https://twitter.com/tenohira_akito" target="_blank">管理者のtwitter</a></span></div>
+        <div class="item RankG KFUMEI WAKAI">
+            <div class="icon"><img src="icon/手平空人.png" width=100px height=100px></div>
+            <div><span class="label">モデル名：</span><span class="name">手平空人</span></div>
+            <div><span class="label">著者名：</span>ust by 手平空人 supported by Haruqa</div>
+            <div><span class="label">リンク：</span><span class="link"><a href="https://twitter.com/tenohira_akito" target="_blank">管理者のtwitter</a></span></div>
+            <div><span class="label">声別：</span>不明</div>
+            <div><span class="label">年齢イメージ：</span>若い</div>
+            <div><span class="label">イメージカラー：</span><span style="background-color:#EA4F13; padding:0px 5px">#EA4F13</span></div>
+            <div><span class="label">説明：</span>UTAU音源から生成されたモデルです</div>
+            <div><span class="label">商用利用：</span>可能</div>
+            <div><span class="label">クレジット表記：</span>必須</div>
+            <div><span class="label">クレジット表記例：</span>手平空人</div>
+            <div><span class="label">その他：</span>3Dモデル素材あり, キャラ設定無視OK, 他のキャラへ声あてOK</div>
             <div>
                 <audio class="sample" controls src="audio/手平空人-1.wav"></audio>
             </div>
         </div>
-        <div class="item RankG">
-            <div><span class="nameLavel">Name：</span><span class="name">玄野武宏</span></div>
-            <div><span class="linkName">Link1：</span><span class="link"><a href="https://virvoxproject.wixsite.com/official" target="_blank">VirVox Project</a></span></div>
-            <div><span class="linkName">Link2：</span><span class="link"><a href="https://booth.pm/ja/items/3076890" target="_blank">【AI系読み上げソフト】TALQu向け男声音源 - 玄野武宏</a></span></div>
+        <div class="item RankG DANSE WAKAI">
+            <div class="icon"><img src="icon/玄野武宏.png" width=100px height=100px></div>
+            <div><span class="label">モデル名：</span>玄野武宏 TALQu</div>
+            <div><span class="label">著者名：</span>管理：VirVox Project　中の人：ガロ</div>
+            <div><span class="label">リンク：</span><a href="https://virvox.booth.pm/items/3076890" target="_blank">BOOTH</a></div>
+            <div><span class="label">声別：</span>男声</div>
+            <div><span class="label">年齢イメージ：</span>若い</div>
+            <div><span class="label">イメージカラー：</span><span style="background-color:#59706C; padding:0px 5px">#59706C</span></div>
+            <div><span class="label">商用利用：</span>スーパーチャットや広告収入、クリエイター奨励プログラムなど個人的同人的利用ならよい</div>
+            <div><span class="label">クレジット表記：</span>任意</div>
+            <div><span class="label">クレジット表記例：</span>TALQu:玄野武宏(CV:ガロ)</div>
+            <div><span class="label">その他：</span>立ち絵素材あり, 3Dモデル素材あり, セリフ素材あり, キャラ設定無視OK, 他のキャラへ声あてOK</div>
+            <div><span class="label">その他項目について説明：</span><a href="https://virvoxproject.wixsite.com/official/talqu%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84" target="_blank">詳細な利用規約</a></div>
             <div>
                 <audio class="sample" controls src="audio/玄野武宏-1.wav"></audio>
             </div>
         </div>
         <div class="item RankG">
-            <div><span class="nameLavel">Name：</span><span class="name">黒昴宿-AI Talk- ver1.00</span></div>
-            <div><span class="linkName">Link：</span><span class="link"><a href="https://atsuya19960924.wixsite.com/akasubaru" target="_blank">昂楽器屋</a></span></div>
+            <div><span class="label">モデル名：</span><span class="name">黒昴宿-AI Talk- ver1.00</span></div>
+            <div><span class="label">リンク：</span><span class="link"><a href="https://atsuya19960924.wixsite.com/akasubaru" target="_blank">昂楽器屋</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/黒昴宿-AI_Talk-_ver1.00-1.wav"></audio>
             </div>
         </div>
         <div class="item RankG">
-            <div><span class="nameLavel">Name：</span><span class="name">黒武光河 (黒っぽいど)-AI Talk-</span></div>
-            <div><span class="linkName">Link：</span><span class="link"><a href="https://atsuya19960924.wixsite.com/akasubaru" target="_blank">昂楽器屋</a></span></div>
+            <div><span class="label">モデル名：</span><span class="name">黒武光河 (黒っぽいど)-AI Talk-</span></div>
+            <div><span class="label">リンク：</span><span class="link"><a href="https://atsuya19960924.wixsite.com/akasubaru" target="_blank">昂楽器屋</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/黒武光河 (黒っぽいど)-AI_Talk--1.wav"></audio>
             </div>
         </div>
         <div class="item RankS">
-            <div><span class="nameLavel">Name：</span><span class="name">くれぽっぽ_HaruqaBase</span></div>
-            <div><span class="linkName">Link1：</span><span class="link"><a href="https://twitter.com/crazy_toho" target="_blank">管理人のTwitter</a></span></div>
-            <div><span class="linkName">Link2：</span><span class="link"><a href="https://crepo.jimdosite.com/" target="_blank">くれぽの部屋</a></span></div>
+            <div><span class="label">モデル名：</span><span class="name">くれぽっぽ_HaruqaBase</span></div>
+            <div><span class="label">リンク１：</span><span class="link"><a href="https://twitter.com/crazy_toho" target="_blank">管理人のTwitter</a></span></div>
+            <div><span class="label">リンク２：</span><span class="link"><a href="https://crepo.jimdosite.com/" target="_blank">くれぽの部屋</a></span></div>
             <div>
                 <audio class="sample" controls src="audio/くれぽっぽ_HaruqaBase-1.wav"></audio>
             </div>

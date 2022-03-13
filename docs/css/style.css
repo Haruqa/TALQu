@@ -49,6 +49,18 @@ a{
     margin: 5px 0px;
 }
 
+.item.RankP{
+    border: 2px solid #00B5B5;
+}
+
+.item.RankG{
+    border: 2px solid #A60;
+}
+
+.item.RankS{
+    border: 2px solid #B3B3B3;
+}
+
 .RankP{
     background: -moz-linear-gradient(#222f2d, #445b64);
     background: -webkit-linear-gradient(#22272f, #445b64);
@@ -65,4 +77,14 @@ a{
     background: -moz-linear-gradient(#222f2d, #3f3f3f);
     background: -webkit-linear-gradient(#22272f, #3f3f3f);
     background: linear-gradient(to right, #22272f, #3f3f3f);
+}
+
+.icon{
+    float:left;
+    margin-right: 20px;
+}
+
+.label{
+    font-size:smaller;
+    color:#AAAAAA;
 }
