@@ -1,90 +1,172 @@
-/* common */
+/* ベース設定 */
 body{
-    background-color: #22272f;
-    color: #EEEEEE;
+    background-color: #122;
+    color:#ebeeed;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight:500;
 }
 
-a{
-    color: #00B582;
-    text-decoration: none;
+/* 全体レイアウト */
+#wrap {
     position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #233;
+    color:#ebeeed;
+}
+
+/* サイトタイトル */
+#site_title{
+    display:block;
+    padding: 10px 0px;
+    font-size: 2em;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-weight: bolder;
+    background-color: #122;
+}
+
+/* トップイメージ */
+#top_img{
+    clear: both;
+    display:block;
+    height:562.5px;
+    width:1000px;
+    background-image: url(../img/1482202-1.png);
+    background-size: cover;
+}
+.twitter-tweet{
+    margin-right: 5px;
+}
+
+/* ヘッダー */
+header {
+    position: relative;
+    z-index: 9999;
+    text-align: center;
+    font-size:1.1em;
+}
+
+header.fixed{
+    width:1000px;
+    top:0;
+	position: fixed;
+}
+
+header #nav {
+    text-align: left;
+    background: #3D5656;
+}
+
+header #nav ul li {
     display: inline-block;
-    transition: .3s;
-  }
-  
-  a::after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: #00B582;
-    transition: .3s;
-    transform: translateX(-50%);
-  }
-  
-  a:hover::after{
-    width: 100%;
-  }
-
-/* parts */
-
-.filter{
-    border: 3px solid #393E46;
-    border-radius: 30px;
-    padding: 15px;
-    margin: 5px 0px;
+    position: relative;
 }
 
-.filterHead{
-    font-size:20px;
-    padding-bottom:5px;
+header #nav ul li a {
+    padding: 15px 20px;
+    display: inline-block;
 }
 
-.item{
-    border: 2px solid #393E46;
-    border-radius: 30px;
-    padding: 15px;
-    margin: 5px 0px;
+header.fixed #nav ul li a {
+    padding: 8px 20px;
+    display: inline-block;
 }
 
-.item.RankP{
-    border: 2px solid #00B5B5;
+header #nav ul li a:hover {
+    background: #6D8F90;
 }
 
-.item.RankG{
-    border: 2px solid #A60;
+/* フッター */
+footer{
+    clear: both;
+    padding: 10px 0;
+    text-align: center;
+    font-size:0.9em;
+    background-color: #122;
 }
 
-.item.RankS{
-    border: 2px solid #B3B3B3;
-}
-
-.RankP{
-    background: -moz-linear-gradient(#222f2d, #445b64);
-    background: -webkit-linear-gradient(#22272f, #445b64);
-    background: linear-gradient(to right, #22272f, #445b64);
-}
-
-.RankG{
-    background: -moz-linear-gradient(#222f2d, #4e4d32);
-    background: -webkit-linear-gradient(#22272f, #4e4d32);
-    background: linear-gradient(to right, #22272f, #4e4d32);
-}
-
-.RankS{
-    background: -moz-linear-gradient(#222f2d, #3f3f3f);
-    background: -webkit-linear-gradient(#22272f, #3f3f3f);
-    background: linear-gradient(to right, #22272f, #3f3f3f);
-}
-
-.icon{
+/* 左メニュー */
+.left_menu{
+    display: block;
+    position:relative;
     float:left;
-    margin-right: 20px;
+    width: 30%;
+    font-size: 1.1em;
 }
 
-.label{
-    font-size:smaller;
-    color:#AAAAAA;
+.left_menu ul li a {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border-bottom: solid 2px #122;/*左線*/
+}
+
+.left_menu ul li a:hover {
+    background:linear-gradient(transparent 90%, #0C8 90%);
+    background-color: #344;
+}
+
+
+/* 右コンテンツ */
+.right_contents{
+    display: block;
+    position:relative;
+    float:right;
+    width: 70%;
+    padding: 1em;
+    border-left: solid 10px #122;/*左線*/
+}
+
+/* コンテンツ */
+.contents{
+    clear: both;
+    display: block;
+    padding: 1em;
+}
+
+/* 見出し */
+h1{
+    font-size: 2.5em;
+    display: block;
+    padding-bottom: 0.5em;/*上下の余白*/
+    border-bottom: solid 3px #0C8;/*下線*/
+    margin: 1em 0;/*上下の余白*/
+}
+
+h2{
+    font-size: 2em;
+    display: block;
+    padding-left: 0.5em;/*左の余白*/
+    border-left: solid 3px #0C8;/*上線*/
+    margin: 1em 0;/*上下の余白*/
+}
+
+/* 段落 */
+p{
+    font-size: 1.1em;
+    display: block;
+    line-height: 1.5em;
+    padding-bottom: 20px; 
+}
+
+/* 段落リンク */
+p a{
+    padding: 0 2px;
+    color:#0C8;
+    font-weight: 600;
+}
+p a:hover{
+    text-decoration-line: underline;
+    background-color: #344;
+}
+
+/* 段落強調 */
+p strong{
+    background:linear-gradient(transparent 70%, #885 70%);
+    font-weight: 600;
+}
+
+/* 段落イタリック */
+p em{
+    background:linear-gradient(transparent 70%, #085 70%);
 }

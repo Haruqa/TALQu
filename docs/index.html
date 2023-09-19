@@ -1,24 +1,98 @@
-<!DOCTYPE html>
-    <header>
-        <title>TALQu</title>
-        <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
-        <link rel="stylesheet" href="css/style.css">
-    </header>
-    <body>
-        ここは、TALQuの開発者が公式ドキュメントを置いて行くところです。<br>
-        <br>
-        TALQuとは<br>
-        深層学習系読み上げソフトです。<br>
-        いわゆるAI系TTSというものです。<br>
-        <br>
-        <a href="https://haruqa.booth.pm/items/2755336" target="_blank">TALQuのダウンロード</a><br>
-        <br>
-        <a href="Model-List.html">TALQuモデル一覧(工事中)</a><br>
-        ここで紹介するのは、開発者によるモデル生成サポートを受けて製作されたモデルのみです。<br>
-        <br>
-        開発者が公開したのモデル生成方法によって作成されたモデルについては、以下からたどるのが便利です。<br>
-        <a href="https://yukaia.net/talqu-release-info/" target="_blank">有志によるTALQuの配布状況まとめ</a><br>
-        <a href="https://w.atwiki.jp/talqu/" target="_blank">有志によるTALQuのwiki</a><br>
+<!--
+トップ：お知らせ、pickup、開発支援をする
+ダウンロード：一般・PRO版・Note版説明、入口
+キャラクター：公式キャラ一覧、リンク、素材、簡易利用規約
+使い方：機能、基本使い方、ライセンス
+支援ツール：公式ツール、サードパーティツール
+開発資料：APIドキュメント、仕様
+コミュニティ：サーバ
+リンク：有志wiki
+-->
 
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>TALQu公式サイト</title>
+        <link rel="stylesheet" type="text/css" href="css/destyle.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <dev id="site_title">TALQu公式サイト</dev>
+            <header>
+                <div id="nav">
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html">トップ</a></li>
+                            <li><a href="./download.html">ダウンロード</a></li>
+                            <li><a href="./character.html">キャラクター</a></li>
+                            <li><a href="./how-to-use.html">使い方</a></li>
+                            <li><a href="./tools.html">支援ツール</a></li>
+                            <li><a href="./reference.html">開発資料</a></li>
+                            <li><a href="./community.html">コミュニティ</a></li>
+                            <li><a href="./links.html">リンク</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+
+            <dev id="top_img"></dev>
+            <span style="position:relative; float:right; padding: 0 5px; top:-1.2em; color: #FFF; background-color: rgba(0, 0, 0,30%);">TOPイラスト：TALQuお茶会　永久恋愛ととと 様 作<a href="https://commons.nicovideo.jp/works/nc309804" target="_blank" style="color:#AFA; margin-left:10px">ニコニ・コモンズ</a></span>
+            
+            <dev class="contents">
+                <h1>
+                    TALQu公式全員大会
+                </h1>
+                <p>
+                    2023/08/23に<em>「TALQu公式キャラクターを全員使ってみよう大会」</em>という作品投稿企画をやっていました。
+                </p>
+                <p>
+                    概要：TALQu3/TALQuNoteキャラクター4人「Haruqa」「十九モチ」「こちぇ」「コル音イム」を登場させること<br>
+                    他追加キャラクター可能、他の企画と同時投稿可能<br>
+                    動画、音声、イラスト、テキスト(会話文のみとか、ネタのメモ、創作キャラ設定メモとかでも)他、ネット経由で共有出来るならなんでもアリ
+                </p>
+                <p>
+                    <a href="https://docs.google.com/spreadsheets/d/1X3hk4t0ECAFykcheunU2kj4ws1S9S9gMA0Cg10QzdnU/edit#gid=0" target="_blank">詳細：Googleスプレッドシート</a>
+                </p>
+                <h2>
+                    参加作品
+                </h2>
+                <p>
+                <div style="float: left; display: block; margin-right: 5px;">
+                <iframe width="450" height="200" src="https://ext.nicovideo.jp/thumb/sm42596586" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="https://www.nicovideo.jp/watch/sm42596586">お茶会を開こう！【TALQu公式キャラクターを全員使ってみよう大会】</a></iframe><br>
+                <a href="https://youtu.be/YcadSYgiF4c?si=VOMbtRfwpO2Q0hvV">YouTube版</a>
+                </div>
+                <div style="float: left; display: block;">
+                <iframe width="450" height="200" src="https://ext.nicovideo.jp/thumb/sm42657760" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="https://www.nicovideo.jp/watch/sm42657760">コチェ教授と天使の杖</a></iframe><br>
+                <a href="https://youtu.be/ZT5n6zm5ARk?si=oGI_MnZzKhsvXMMO">YouTube版</a>    
+                </div>
+                </p>
+                <p>
+                <div style="float: left; display: block;">
+                <blockquote class="twitter-tweet" data-theme="dark" data-width="450px"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/TALQu%E5%85%AC%E5%BC%8F%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%92%E5%85%A8%E5%93%A1%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%E5%A4%A7%E4%BC%9A?src=hash&amp;ref_src=twsrc%5Etfw">#TALQu公式キャラクターを全員使ってみよう大会</a><br>ぬるっと参加通過します<br>TALQuNoteで<br>Haruqaさん<br>十九モチさん<br>こちぇさん<br>コル音イムさん<br>にしゃべってもらいました。 <a href="https://t.co/74FQ4ibqJq">pic.twitter.com/74FQ4ibqJq</a></p>&mdash; イツつらめ (@ippanjin_20) <a href="https://twitter.com/ippanjin_20/status/1694265721013072304?ref_src=twsrc%5Etfw">August 23, 2023</a></blockquote>
+                </div>
+                <div style="float: left; display: block;">
+                <blockquote class="twitter-tweet" data-theme="dark" data-width="450px"><p lang="ja" dir="ltr">デフォルメ絵🍀<br> <a href="https://twitter.com/hashtag/TALQu%E5%85%AC%E5%BC%8F%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%92%E5%85%A8%E5%93%A1%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%E5%A4%A7%E4%BC%9A?src=hash&amp;ref_src=twsrc%5Etfw">#TALQu公式キャラクターを全員使ってみよう大会</a>　<a href="https://twitter.com/hashtag/Haruqa?src=hash&amp;ref_src=twsrc%5Etfw">#Haruqa</a>　<a href="https://twitter.com/hashtag/%E3%81%93%E3%81%A1%E3%81%87?src=hash&amp;ref_src=twsrc%5Etfw">#こちぇ</a>　<a href="https://twitter.com/hashtag/%E5%8D%81%E4%B9%9D%E3%82%82%E3%81%A1?src=hash&amp;ref_src=twsrc%5Etfw">#十九もち</a>　<a href="https://twitter.com/hashtag/%E3%82%B3%E3%83%AB%E9%9F%B3%E3%82%A4%E3%83%A0?src=hash&amp;ref_src=twsrc%5Etfw">#コル音イム</a>　<a href="https://twitter.com/hashtag/%E3%81%88%E3%81%8F%E3%81%A8%E3%81%A8%E3%81%82%E3%83%BC%E3%81%A8?src=hash&amp;ref_src=twsrc%5Etfw">#えくととあーと</a> <a href="https://twitter.com/hashtag/TALQu?src=hash&amp;ref_src=twsrc%5Etfw">#TALQu</a> <a href="https://t.co/W4JZGpAxcK">pic.twitter.com/W4JZGpAxcK</a></p>&mdash; MAREFFY@依頼受付中 (@mareffy_nan3) <a href="https://twitter.com/mareffy_nan3/status/1694314057678160382?ref_src=twsrc%5Etfw">August 23, 2023</a></blockquote>
+                </div> 
+                <div style="float: left; display: block;">
+                <blockquote class="twitter-tweet" data-theme="dark" data-width="450px"><p lang="ja" dir="ltr">みんなで水族館🐟<br>こちぇ‐「見てみて音イムさん！」<br>コル音イム‐「鯵がいっぱい泳いでいるね♪」<br>Haruqa‐「美味しそう🤤」<br>十九もち‐「はるにぃ…」<a href="https://twitter.com/hashtag/TALQu%E5%85%AC%E5%BC%8F%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%92%E5%85%A8%E5%93%A1%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%E5%A4%A7%E4%BC%9A?src=hash&amp;ref_src=twsrc%5Etfw">#TALQu公式キャラクターを全員使ってみよう大会</a> <a href="https://t.co/bsD4nbzijn">pic.twitter.com/bsD4nbzijn</a></p>&mdash; 🪫ユニッツ ⚙ポンコツUnits🔩 (@PonkotsuUnits) <a href="https://twitter.com/PonkotsuUnits/status/1694361840258859226?ref_src=twsrc%5Etfw">August 23, 2023</a></blockquote>
+                </div>
+                <div style="float: left; display: block;">
+                <blockquote class="twitter-tweet" data-theme="dark" data-width="450px"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/TALQu%E5%85%AC%E5%BC%8F%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%92%E5%85%A8%E5%93%A1%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%E5%A4%A7%E4%BC%9A?src=hash&amp;ref_src=twsrc%5Etfw">#TALQu公式キャラクターを全員使ってみよう大会</a><br><br>2023/08/23ですよ！全員集合～ということで、<br>私の全員大会エントリー作品はこちら👀<br><br>TALQuによるフルボイスノベルゲームです。<br>初めてのゲーム作品でした🍀<br>セリフの30％くらいはピッチ書き換え調声がかかってます😌<br> <a href="https://t.co/ECxYaDk4o9">https://t.co/ECxYaDk4o9</a></p>&mdash; Haruqaもち🍀ぽよんぽよん (@niconicoHaruqa) <a href="https://twitter.com/niconicoHaruqa/status/1694003925823987932?ref_src=twsrc%5Etfw">August 22, 2023</a></blockquote>
+                </div>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                </p>
+                <div style="clear: both;"></div>
+            </dev><!-- contents -->
+            
+            <footer>
+                © Copyright 2020 - 2023 Haruqa All rights reserved.
+            </footer>
+        </div><!-- wrap -->
+
+        <script src="script/jquery-3.7.0.min.js"></script>
+        <script src="script/common.js"></script>
     </body>
 </html>
