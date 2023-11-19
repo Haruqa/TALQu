@@ -1,0 +1,186 @@
+.character_card{
+    background-color: #344;
+    line-height: 1.2;
+    width: 100%;
+    margin: 0 auto 20px;
+    padding:10px 10px 0 10px;
+}
+
+.character_card a{
+    color:#0C8;
+}
+
+.character_card a:hover{
+    text-decoration-line: underline;
+    background-color: #233;
+}
+
+.character_card em{
+    font-style:normal;
+    background:linear-gradient(transparent 85%, rgb(1, 186, 118) 70%);
+    line-height: 1.8;
+}
+.character_card .ng{
+    background:linear-gradient(transparent 85%, rgb(235, 152, 28) 70%);
+}
+
+.character_card_flex{
+    display:flex;
+}
+.character_card_flex2{
+    display:flex;
+    margin-top:20px;
+}
+
+.character_card_name{
+    text-align: center;
+}
+.summary_icon_space{
+    width:100px;
+}
+.character_card_text_left{
+    margin-left:5px;
+    width:400px;
+}
+.character_card_text_right{
+    margin-left:10px;
+    width:400px;
+}
+
+.character_card_text_left_bottom{
+    margin-left:5px;
+}
+.character_card_text_right_bottom{
+    margin-left:5px;
+}
+
+.copy_icon{
+    position: relative;
+    display:inline-block;
+    background-image: url(../img/copy_icon.png);
+    background-size:  cover;
+    width:1em;
+    height:1em;
+    cursor:pointer;
+}
+/* 押下中 */
+.copy_icon:active {
+    bottom:-1px;
+    right:-1px;
+}
+/* ツールチップのスタイル */
+.tooltip {
+    position: absolute;
+    width:max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; /* テキストとの距離 */
+    padding: 5px;
+    border-radius: 10px; /* 角の丸み */
+    background-color: #666;
+    font-size: 0.7em;
+    color: #fff;
+    visibility: hidden; /* ツールチップを非表示に */
+    opacity: 0; /* 不透明度を0％に */
+    z-index: 1;
+}
+
+/* マウスオーバー時のスタイル */
+.copy_icon:hover .tooltip {
+    bottom: 100%; /* Y軸の位置 */
+    visibility: visible; /* ツールチップを表示 */
+    opacity: 1; /* 不透明度を100％に */
+}
+
+
+
+.details {
+    background-color: #344;
+    line-height: 1.2;
+    width: 100%;
+    margin: 0 auto;
+    padding:10px;
+    &__summary {
+        position: relative;
+        display: block;
+        background: #F3FFF3;
+        cursor: pointer;
+        margin: 0;
+        padding: 10px 40px 10px 16px;
+        &::-webkit-details-marker {
+        display: none;
+        }
+        &::before {
+        display: block;
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: calc(50% - 6px);
+        right: 16px;
+        width: 6px;
+        height: 6px;
+        border: 6px solid transparent;
+        border-left: 6px solid #287E39;
+        transition: all 0.4s ease-out;
+        transform-origin: 3px 6px;
+        transform: rotate(90deg);
+        .details[open] & {
+            transform: rotate(-90deg);
+        }
+        }
+    }
+    &__content {
+        overflow: hidden;
+        margin: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        > * {
+            margin: 0;
+            padding-top: 16px;
+            &:last-child {
+                padding-bottom: 16px;
+            }
+        }
+    }
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+details summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.summary_detaile_display_link{
+    color:#0C8;
+    text-align:center;
+}
+
+.summary_detaile_display_link:hover{
+    text-decoration-line: underline;
+    background-color: #233;
+}
+
+.details__content_indent_h3{
+    margin-left:20px;
+    margin-right:20px;
+    padding-bottom:20px;
+}
+.details__content_indent_h4{
+    margin-left:20px;
+}
+
+.details_update_date{
+    display:block;
+    float:right;
+    color: #999;
+    text-align:right;
+}
+
+.tyusyaku{
+    font-size:0.8em;
+    font-style:italic;
+    color: #999;
+    margin-left: 10px;
+}
+
