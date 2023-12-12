@@ -90,15 +90,28 @@ footer{
     display: block;
     position:relative;
     float:left;
-    width: 30%;
+    width: 25%;
     font-size: 1.1em;
+}
+
+.left_menu a.title {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border-bottom: solid 2px #122;
+    background:linear-gradient(transparent 90%, #588 90%);
+}
+
+.left_menu a:hover.title {
+    background:linear-gradient(transparent 90%, #0C8 90%);
+    background-color: #344;
 }
 
 .left_menu ul li a {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     display: inline-block;
-    border-bottom: solid 2px #122;/*左線*/
+    border-bottom: solid 2px #122;
 }
 
 .left_menu ul li a:hover {
@@ -112,7 +125,7 @@ footer{
     display: block;
     position:relative;
     float:right;
-    width: 70%;
+    width: 75%;
     padding: 1em;
     border-left: solid 10px #122;/*左線*/
 }
@@ -185,4 +198,14 @@ p strong{
 /* 段落イタリック */
 p em{
     background:linear-gradient(transparent 70%, #085 70%);
+}
+
+/* 背景黒強調 */
+p .black_em{
+    padding:1px;
+    background-color: #122;
+}
+div.black_em{
+    padding:5px;
+    background-color: #122;
 }

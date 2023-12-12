@@ -25,9 +25,97 @@
                     </nav>
                 </div>
             </header>
-            <dev class="contents">
+            <dev class="left_menu">
+                <a href="#TALQuPRO_CMDClient" class="title">TALQuPRO_CMDClient</a>
+                <ul>
+                    <li><a href="#getVersion">バージョン確認</a></li>
+                    <li><a href="#getSpkName">利用可能話者名取得</a></li>
+                    <li><a href="#execute">合成実行</a></li>
+                    <li><a href="#attention">注意</a></li>
+                </ul>
+                <a href="#add_model" class="title">追加モデル</a>
+                <ul>
+                    <li><a href="#creditFormat">クレジット表記書式</a></li>
+                </ul>
+            </dev><!-- left_menu -->
+            <dev class="right_contents">
+                <h1 id="TALQuPRO_CMDClient">
+                    TALQuPRO_CMDClient
+                </h1>
                 <p>
-                    工事中
+                    TALQuPRO_CMDClientでコマンドライン実行が可能です。<br>
+                    ※<em>現在支援版TALQuのみ対応</em>、TALQu3の一般リリース時に一般配布版TALQuで利用可能となる予定です。<br>
+                </p>
+                <h2 id="getVersion">
+                    バージョン確認
+                </h2>
+                <p>
+                    形式　：<span class="black_em">getVersion</span><br>
+                    必須　：<span class="black_em">getVersion</span><br>
+                    戻り値：<span class="black_em">#.#.#</span>でバージョンが返却されます。一つ目が同じであれば、以前から存在したコマンドについて想定形式が同じです。二つ 目以降が異なる場合は挙動が異なる可能性があります。<br>
+                </p>
+                <h2 id="getSpkName">
+                    利用可能話者名取得
+                </h2>
+                <p>
+                    形式　：<span class="black_em">getSpkName</span><br>
+                    必須　：<span class="black_em">getSpkName</span><br>
+                    戻り値：<span class="black_em">「,」区切りの文字列で利用可能話者名</span>が返却されます。<br>
+                    <br>
+                    例)<span class="black_em">TALQuPRO_CMDClient.exe getSpkName</span><br>
+                    戻り値例)<span class="black_em">Haruqa,十九モチ</span><br>
+                </p>
+                <h2 id="execute">
+                    合成実行
+                </h2>
+                <p>
+                    形式　：<em>話者名</em>,<em>出力ファイルフルパス</em>,<em>漢字かな</em>,発音かな,再生実行フラグ,話速,抑揚,ピッチ[モデル入力],小ポーズの長さ,大ポーズ の長さ,声の高さ[ピッチ],声色の高さ[フォルマント],Refineフラグ<br>
+                    必須　：「話者名」「出力ファイルフルパス」「漢字かな」は必須入力です。必須入力以降の入力を一部省略する場合は、前の入力を空文字で置いてください。<br>
+                    戻り値：なし<br>
+                    <br>
+                    必須入力のみの例)<br>
+                    <span class="black_em">TALQuPRO_CMDClient.exe Haruqa,D:\Workspace\output.wav,読み上げたいテキスト</span><br>
+                    <br>
+                    発音かなを省略し、再生実行フラグをつけた例)<br>
+                    <span class="black_em">TALQuPRO_CMDClient.exe Haruqa,D:\Workspace\output.wav,読み上げたいテキスト,,true</span><br>
+                    <br>
+                    再生実行のみを行う例)<br>
+                    <span class="black_em">TALQuPRO_CMDClient.exe Haruqa,dummy,読み上げたいテキスト,,only</span><br>
+                    ※再生の完了後、TALQuPRO_CMDClient.exeプロセスが終了します。<br>
+                </p>
+                <h2 id="attention">
+                    注意
+                </h2>
+                <p>
+                    TALQuフォルダ以下の構成は予告なく変更される可能性があるので、TALQuフォルダ以下のファイルへのアクセスはNGです。
+                </p>
+                <h1 id="add_model">
+                    追加モデル
+                </h1>
+                <p>
+                    TALQu3での追加モデル開発方法について検証中です。<br>
+                </p>
+                <h2 id="creditFormat">
+                    クレジット表記書式
+                </h2>
+                <p>
+                    [半角英字で大文字TALQ小文字u][半角コロン(:)][話者名(キャラクター名)]<br>
+                    の表記とすることを推奨しています。<br>
+                    <em>※強制ではありません。</em><br>
+                    例)<span class="black_em">TALQu:Haruqa</span><br>
+                    <br>
+                    また、複数TALQu話者を使用する場合、話者名(キャラクター名)を半角カンマ(,)で区切って並べてまとめて表記することを可能とします。<br>
+                    例)<span class="black_em">TALQu:Haruqa,十九モチ</span><br>
+                    <br>
+                    利用イメージ)TALQu3のHaruqaと十九モチと、とととさんの立ち絵を使ったとき<br>
+                    <div class="black_em">
+                        声)<br>
+                        TALQu:Haruqa,十九モチ<br>
+                        <br>
+                        イラスト)<br>
+                        ととと式Haruqa立ち絵素材：永久恋愛ととと<br>
+                        十九モチ立ち絵素材：永久恋愛ととと<br>
+                    </div>
                 </p>
             </dev><!-- contents -->
             <footer>
