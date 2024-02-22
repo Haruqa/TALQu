@@ -26,29 +26,31 @@
                 </div>
             </header>
             <dev class="left_menu">
-                <a href="#TALQuPRO_CMDClient" class="title">TALQuPRO_CMDClient</a>
+                <a href="#TALQu_CMDClient" class="title">TALQu_CMDClient</a>
                 <ul>
                     <li><a href="#getVersion">バージョン確認</a></li>
                     <li><a href="#getSpkName">利用可能話者名取得</a></li>
                     <li><a href="#execute">合成実行</a></li>
                     <li><a href="#attention">注意</a></li>
                 </ul>
-                <a href="#add_model" class="title">追加モデル</a>
+                <a href="#attachModel" class="title">取付モデル</a>
                 <ul>
                     <li><a href="#creditFormat">クレジット表記書式</a></li>
                 </ul>
             </dev><!-- left_menu -->
             <dev class="right_contents">
-                <h1 id="TALQuPRO_CMDClient">
-                    TALQuPRO_CMDClient
+                <h1>
+                    <div class="target" id="TALQu_CMDClient"></div>
+                    TALQu_CMDClient
                 </h1>
                 <p>
-                    TALQuPRO_CMDClientでコマンドライン実行が可能です。<br>
-                    ※<em>現在支援版TALQuのみ対応</em>、TALQu3の一般リリース時に一般配布版TALQuで利用可能となる予定です。<br>
+                    TALQu_CMDClientでコマンドライン実行が可能です。<br>
                     <br>
                     実装参考：<a href="https://github.com/Haruqa/sample_program_using_TALQu_CMDClient/tree/main/YouTubeLiveChat_to_TALQuPRO" target="_blank">YouTubeLiveチャット読み上げのサンプルプログラム</a>
                 </p>
-                <h2 id="getVersion">
+                
+                <h2>
+                    <div class="target" id="getVersion"></div>
                     バージョン確認
                 </h2>
                 <p>
@@ -56,7 +58,8 @@
                     必須　：<span class="black_em">getVersion</span><br>
                     戻り値：<span class="black_em">#.#.#</span>でバージョンが返却されます。一つ目が同じであれば、以前から存在したコマンドについて想定形式が同じです。二つ 目以降が異なる場合は挙動が異なる可能性があります。<br>
                 </p>
-                <h2 id="getSpkName">
+                <h2>
+                    <div class="target" id="getSpkName"></div>
                     利用可能話者名取得
                 </h2>
                 <p>
@@ -64,10 +67,11 @@
                     必須　：<span class="black_em">getSpkName</span><br>
                     戻り値：<span class="black_em">「,」区切りの文字列で利用可能話者名</span>が返却されます。<br>
                     <br>
-                    例)<span class="black_em">TALQuPRO_CMDClient.exe getSpkName</span><br>
+                    例)<span class="black_em">TALQu_CMDClient.exe getSpkName</span><br>
                     戻り値例)<span class="black_em">Haruqa,十九モチ</span><br>
                 </p>
-                <h2 id="execute">
+                <h2>
+                    <div class="target" id="execute"></div>
                     合成実行
                 </h2>
                 <p>
@@ -76,28 +80,31 @@
                     戻り値：なし<br>
                     <br>
                     必須入力のみの例)<br>
-                    <span class="black_em">TALQuPRO_CMDClient.exe Haruqa,D:\Workspace\output.wav,読み上げたいテキスト</span><br>
+                    <span class="black_em">TALQu_CMDClient.exe Haruqa,D:\Workspace\output.wav,読み上げたいテキスト</span><br>
                     <br>
                     発音かなを省略し、再生実行フラグをつけた例)<br>
-                    <span class="black_em">TALQuPRO_CMDClient.exe Haruqa,D:\Workspace\output.wav,読み上げたいテキスト,,true</span><br>
+                    <span class="black_em">TALQu_CMDClient.exe Haruqa,D:\Workspace\output.wav,読み上げたいテキスト,,true</span><br>
                     <br>
                     再生実行のみを行う例)<br>
-                    <span class="black_em">TALQuPRO_CMDClient.exe Haruqa,dummy,読み上げたいテキスト,,only</span><br>
-                    ※再生の完了後、TALQuPRO_CMDClient.exeプロセスが終了します。<br>
+                    <span class="black_em">TALQu_CMDClient.exe Haruqa,dummy,読み上げたいテキスト,,only</span><br>
+                    ※再生の完了後、TALQu_CMDClient.exeプロセスが終了します。<br>
                 </p>
-                <h2 id="attention">
+                <h2>
+                    <div class="target" id="attention"></div>
                     注意
                 </h2>
                 <p>
                     TALQuフォルダ以下の構成は予告なく変更される可能性があるので、TALQuフォルダ以下のファイルへのアクセスはNGです。
                 </p>
-                <h1 id="add_model">
-                    追加モデル
+                <h1>
+                    <div class="target" id="attachModel"></div>
+                    取付モデル
                 </h1>
                 <p>
-                    TALQu3での追加モデル開発方法について検証中です。<br>
+                    TALQu3での取付モデル開発方法について検証中です。<br>
                 </p>
-                <h2 id="creditFormat">
+                <h2>
+                    <div class="target" id="creditFormat"></div>
                     クレジット表記書式
                 </h2>
                 <p>

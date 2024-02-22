@@ -25,10 +25,149 @@
                     </nav>
                 </div>
             </header>
-            <dev class="contents">
+            <dev class="left_menu">
+                <a href="#manager" class="title">TALQuManager</a>
+                <ul>
+                    <li><a href="#install">インストール</a></li>
+                    <li><a href="#update">アップデート</a></li>
+                    <li><a href="#upgrade">アップグレード</a></li>
+                    <li><a href="#downgrade">ダウングレード</a></li>
+                    <li><a href="#updateManager">Managerのアップデート</a></li>
+                    <li><a href="#uninstall">アンインストール</a></li>
+                </ul>
+                <a href="#talqu" class="title">TALQu本体</a>
+                <ul>
+                    <li><a href="#play">再生</a></li>
+                    <li><a href="#save">保存</a></li>
+                    <li><a href="#shortcut">ショートカット</a></li>
+                    <li><a href="#pitchEditor">ピッチ調声</a></li>
+                    <li><a href="#gridEditor">グリッドエディター</a></li>
+                </ul>
+                <a href="#legacyModel" class="title">レガシーモデル(TALQu2)</a>
+                <ul>
+                    <li><a href="#legacyModelConverter">変換ツール</a></li>
+                    <li><a href="#legacyModelInstall">インストール</a></li>
+                </ul>
+            </dev><!-- left_menu -->
+            <dev class="right_contents">
                 <p>
                     工事中<br>
-                    <a href="https://haruqa.booth.pm/items/2755336" target="_blank">ひとまずBOOTHぺーじへリンク</a>
+                </p>
+                <h1>
+                    <div class="target" id="manager"></div>
+                    TALQuManager
+                </h1>
+                <p>
+                    TALQuManagerによってインストール、アップデートを行います。
+                </p>
+                <h2>
+                    <div class="target" id="install"></div>
+                    インストール
+                </h2>
+                <p>
+                    zipを解凍し、TALQuフォルダーの中のTALQuManagerフォルダーの中の「TALQuManager.exe」を起動してください。TALQuManagerフォルダーの一つ上のフォルダーへファイルを展開するため、フォルダー構造を変更しないでください。<br>
+                    <br>
+                    PRO版トークンをお持ちの方は、PRO版トークンテキストボックスに入力してください。PRO版トークンを空にして実行すると、一般配布版をインストールできます。
+                </p>
+                <h2>
+                    <div class="target" id="update"></div>
+                    アップデート
+                </h2>
+                <p>
+                    TALQu本体を起動時にアップデート確認が自動で行われます。アップデートが存在する場合は、アップデート実行確認ダイアログが表示されるので、ダウンロードを実行して問題ない回線を使用している場合は実行してください。<br>
+                    ※アップデートを実行しないままTALQu本体の機能はご利用いただけません。
+                </p>
+                <h2>
+                    <div class="target" id="upgrade"></div>
+                    アップグレード
+                </h2>
+                <p>
+                    一般配布版TALQu本体からPRO版へのアップグレードが可能です。一般配布版TALQu本体のアップグレードボタンをご利用ください。
+                </p>
+                <h2>
+                    <div class="target" id="downgrade"></div>
+                    ダウングレード
+                </h2>
+                <p>
+                    PRO版トークンが期限切れとなるなどした場合、PRO版TALQu本体の起動時に行われるアップデート確認でエラーとなります。その後表示されるTALQuManagerのPRO版トークンテキストボックスを空にすることでダウングレードが可能です。
+                </p>
+                <h2>
+                    <div class="target" id="updateManager"></div>
+                    Managerのアップデート
+                </h2>
+                <p>
+                    TALQuManager自体のアップデートが必要な場合、TALQu本体起動時に行われるアップデート確認のときに、その旨が表示されます。表示されたメッセージに従ってください。
+                </p>
+                <h2>
+                    <div class="target" id="uninstall"></div>
+                    アンインストール
+                </h2>
+                <p>
+                    レジストリ操作などはしていません。配備したファイルをそれぞれ削除してください。
+                </p>
+                <h1>
+                    <div class="target" id="talqu"></div>
+                    TALQu本体
+                </h1>
+                <h2>
+                    <div class="target" id="play"></div>
+                    再生
+                </h2>
+                <p>
+                    「読み上げる文」、もしくは、「発音ひらがな」へセリフを入力し、「再生」ボタンで合成が実行された後再生されます。
+                </p>
+                <h2>
+                    <div class="target" id="save"></div>
+                    保存
+                </h2>
+                <p>
+                    一度再生を行っている場合「今聞いたのを保存」ボタンで保存できます。一度も再生していない場合は「wav保存」ボタンで合成と保存を同時にできます。
+                </p>
+                <h2>
+                    <div class="target" id="shortcut"></div>
+                    ショートカット
+                </h2>
+                <p>
+                    工事中<!-- TODO -->
+                </p>
+                <h2>
+                    <div class="target" id="pitchEditor"></div>
+                    ピッチ調声
+                </h2>
+                <p>
+                    一度再生を行った後、「調声する」ボタンからピッチ調声を行う画面が表示されます。波形表示領域をクリック＆ドラッグで赤色のラインを記入できます。緑色のラインがオリジナルのピッチ、赤色のラインが書き込んだピッチです。赤色のラインが存在する場合、赤いラインのピッチが有効。赤色のラインが存在しない場合、緑色のラインが有効です。「Play」ボタンで再生、「Reset」ボタンで赤色のラインを消去、「Save」でピッチを変更したwavを保存できます。
+                </p>
+                <h2>
+                    <div class="target" id="gridEditor"></div>
+                    グリッドエディター
+                </h2>
+                <p>
+                    一度再生を行った後、「グリッドエディターを開く」ボタンからグリッドエディター画面が表示されます。表上に表示されるひらがなをクリックもしくはクリック＆ドラッグで上下に移動できます。上下の位置関係はモデルへの入力ピッチに対応します。「Play」ボタンで再生、「Reset」ボタンで初期状態へ、「Save」で変更結果をwavに保存できます。
+                </p>
+                <h1>
+                    <div class="target" id="legacyModel"></div>
+                    レガシーモデル(TALQu2)
+                </h1>
+                <h2>
+                    <div class="target" id="legacyModelConverter"></div>
+                    変換ツール
+                </h2>
+                <p>
+                    使い方ステップバイステップ：<br>
+                    １．「<a href="https://haruqa-convert-nt2.hf.space/" target="_blank">Convert NT2</a> 」へアクセス<br>
+                    ２．音響モデルを「Convert NT2」のcheckpointにドラッグアンドドロップ（110MBくらいのチェックポイントファイル、もしくは学習結果として得られる330MBくらいのチェックポイントファイル）<br>
+                    ３．ほか、モデル名、著者名などを記入（＊付きが必須入力です）<br>
+                    ※アーリーストップはチェックオフの状態だと語尾にごみ(?)が付くなというときにチェックを入れてみてください。Haruqaのモデルだとアーリーストップが必要でした<br>
+                    ４．checkpointのアップロードが完了していたら（環境によっては40分くらい待たされます）、Submitボタンをクリック<br>
+                    ５．outputにファイルリンクが表示されたらクリックしてダウンロード（例：Haruqaを変換した場合「Haruqa_TALQuModel2.2」）<br>
+                </p>
+                <h2>
+                    <div class="target" id="legacyModelInstall"></div>
+                    インストール
+                </h2>
+                <p>
+                    「なんとかかんとか_TALQuModel2.#」というファイルをTALQu本体画面へドラッグアンドドロップでインストール。<br>
+                    何らかのエラーが出た場合、各位で変換していた場合は変換をやり直す、もしくは、変換済みのものの場合は配布元へご確認、もしくは、Haruqaへ連絡をお願いします。
                 </p>
             </dev><!-- contents -->
             <footer>
