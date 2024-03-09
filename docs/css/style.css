@@ -76,6 +76,10 @@ header #nav ul li a:hover {
     background: #6D8F90;
 }
 
+.header_highlighted_a{
+    background: #6D8F90;
+}
+
 /* フッター */
 footer{
     clear: both;
